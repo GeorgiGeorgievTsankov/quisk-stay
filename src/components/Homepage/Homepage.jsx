@@ -5,10 +5,10 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <div className="hero-section">
-        <h1>Welcome to Our Hotel</h1>
-        <p>Discover the perfect place for your stay</p>
-        <Link to="/rooms" className="cta-button">
-          View Our Rooms
+        <h1>Welcome to Mountain Cabins</h1>
+        <p>Discover your perfect mountain getaway</p>
+        <Link to="/cabins" className="cta-button">
+          View Our Cabins
         </Link>
       </div>
     </div>
