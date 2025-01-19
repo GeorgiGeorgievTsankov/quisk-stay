@@ -2,8 +2,14 @@ import { Link } from "react-router-dom";
 import { useCabins } from "../../hooks/useCabins";
 import "./CabinListing.css";
 
+
 const CabinListing = () => {
   const { cabins, loading, error } = useCabins();
+  
+
+  const calculateDiscountPrice = (regularPrice, discount) => {
+    return regularPrice - discount;
+  };
 
   if (loading) {
     return <div className="loading">Loading cabins...</div>;
@@ -28,7 +34,7 @@ const CabinListing = () => {
               <p className="description">{cabin.description}</p>
               <div className="price-info">
                 <p className="regular-price">
-                  ${cabin.regularPrice}
+                  ${calculateDiscountPrice(cabin.regularPrice, cabin.discount)}
                   {cabin.discount > 0 && (
                     <span className="original-price">
                       ${cabin.regularPrice}
