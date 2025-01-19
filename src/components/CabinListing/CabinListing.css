@@ -1,5 +1,5 @@
 .cabin-listing {
-  padding: 2rem;
+  padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -16,6 +16,7 @@
 }
 
 .cabin-card {
+    width: 90%;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -71,8 +72,8 @@
   font-size: 1rem;
 }
 
-.discount {
-  color: #28a745;
+.cabin-card .discount {
+  color: red;
   font-weight: bold;
   font-size: 0.9rem;
 }
