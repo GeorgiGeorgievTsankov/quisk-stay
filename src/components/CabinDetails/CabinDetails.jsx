@@ -66,7 +66,10 @@ const CabinDetails = () => {
             <h3>Final Price</h3>
             <p>${cabin.regularPrice - cabin.discount}</p>
           </div>
-          <button className="book-button">Book Now</button>
+          <div className="booking-buttons">
+            <button className="book-button">Delete</button>
+            <button className="book-button">Edit</button>
+          </div>
         </div>
 
         <Link to="/cabins" className="back-link">

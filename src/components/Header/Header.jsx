@@ -40,6 +40,11 @@ const Header = () => {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link to="/logIn" onClick={() => setIsMenuOpen(false)}>
+                Log In
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
