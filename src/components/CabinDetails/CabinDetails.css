@@ -337,6 +337,13 @@
     cursor: pointer;
     transition: background-color 0.3s;
   }
+
+
+  .booking-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
   
   @media (min-width: 768px) {
     .book-button {
